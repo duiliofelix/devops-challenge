@@ -11,6 +11,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '15.x'
+      - uses: actions/checkout@v4
       - run: npm install
       - run: npm run lint
       - run: npm run prettier
